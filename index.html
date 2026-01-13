@@ -2,9 +2,12 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>❄️ Ринок Raid SL UA</title>
-<meta name="description" content="Українська спільнота гравців RAID Shadow Legends. Зимовий фентезі ринок у Telegram.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Заборона масштабування -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Ринок Raid SL UA</title>
+<meta name="description" content="Українська спільнота гравців RAID Shadow Legends. Зимовий фентезі-ринок у Telegram.">
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
@@ -12,117 +15,74 @@
 body{
     margin:0;
     font-family:'Cinzel', serif;
-    background:#020617;
+    background:linear-gradient(180deg,#020617,#0b1b2b);
     color:#e5e7eb;
-    overflow-x:hidden;
-}
-
-/* Snow */
-.snow{
-    position:fixed;
-    inset:0;
-    background:url("https://i.imgur.com/NM3zY0p.png");
-    opacity:0.25;
-    pointer-events:none;
-    animation:snow 60s linear infinite;
-    z-index:1;
-}
-@keyframes snow{
-    from{background-position:0 0;}
-    to{background-position:0 2000px;}
-}
-
-/* Glow */
-.glow{
-    position:absolute;
-    width:600px;
-    height:600px;
-    background:radial-gradient(circle, rgba(125,211,252,0.25), transparent 70%);
-    filter:blur(40px);
-    animation:float 10s ease-in-out infinite;
-}
-@keyframes float{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-40px);}
 }
 
 .hero{
     min-height:100vh;
     background:
-      linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,1)),
+      linear-gradient(rgba(2,6,23,0.85),rgba(2,6,23,0.95)),
       url("https://images.alphacoders.com/100/1001716.jpg") center/cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
-    position:relative;
-    z-index:2;
+    padding:40px;
 }
 
 .hero-box{
-    background:rgba(2,6,23,0.85);
-    border:1px solid rgba(125,211,252,0.3);
+    background:rgba(2,6,23,0.9);
+    border:2px solid rgba(125,211,252,0.3);
     border-radius:24px;
-    padding:80px 50px;
+    padding:70px 50px;
     text-align:center;
-    box-shadow:0 0 80px rgba(125,211,252,0.3);
     max-width:900px;
-    position:relative;
+    box-shadow:0 0 50px rgba(125,211,252,0.25);
 }
 
 h1{
-    font-size:4em;
+    font-size:3.8em;
     color:#7dd3fc;
-    text-shadow:0 0 30px rgba(125,211,252,1);
+    text-shadow:0 0 25px rgba(125,211,252,0.8);
 }
 
 .subtitle{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     font-size:1.3em;
-    color:#cbd5f5;
     margin-top:20px;
+    color:#cbd5f5;
 }
 
 .button{
     display:inline-block;
     margin-top:40px;
-    padding:20px 50px;
+    padding:18px 50px;
     background:linear-gradient(135deg,#38bdf8,#0ea5e9);
     color:#020617;
     text-decoration:none;
     font-weight:bold;
-    border-radius:16px;
-    box-shadow:0 0 40px rgba(56,189,248,1);
-    transition:0.3s;
-}
-.button:hover{
-    transform:scale(1.05);
+    border-radius:14px;
+    box-shadow:0 0 30px rgba(56,189,248,0.9);
 }
 
 .section{
     max-width:1100px;
     margin:auto;
-    padding:100px 20px;
-    position:relative;
-    z-index:2;
+    padding:90px 20px;
 }
 
 .card{
     background:rgba(2,6,23,0.9);
-    border:1px solid rgba(125,211,252,0.3);
+    border:1px solid rgba(125,211,252,0.25);
     border-radius:20px;
     padding:50px;
     margin-top:50px;
-    box-shadow:0 0 50px rgba(125,211,252,0.15);
-    animation:fadeUp 1s ease forwards;
-}
-@keyframes fadeUp{
-    from{opacity:0; transform:translateY(30px);}
-    to{opacity:1; transform:translateY(0);}
+    box-shadow:0 0 40px rgba(125,211,252,0.15);
 }
 
 h2{
     color:#bae6fd;
-    text-shadow:0 0 20px rgba(125,211,252,0.6);
+    text-shadow:0 0 15px rgba(125,211,252,0.5);
 }
 
 ul{
@@ -132,23 +92,21 @@ ul{
 
 .footer{
     text-align:center;
-    padding:60px 20px;
+    padding:50px 20px;
     opacity:0.6;
-    font-family:Arial;
+    font-family:Arial,sans-serif;
 }
 </style>
 </head>
 
 <body>
-<div class="snow"></div>
 
 <div class="hero">
-    <div class="glow"></div>
     <div class="hero-box">
         <h1>Ринок Raid SL UA</h1>
         <p class="subtitle">
-        Український фентезі-ринок у світі RAID Shadow Legends.  
-        Зима, магія та спільнота в Telegram.
+        Українська спільнота гравців RAID Shadow Legends.  
+        Зимовий фентезі-ринок у Telegram.
         </p>
         <a class="button" href="https://t.me/bazar_raid_ua" target="_blank">Увійти в Telegram</a>
     </div>
@@ -158,26 +116,25 @@ ul{
     <div class="card">
         <h2>Про спільноту</h2>
         <p>
-        Ринок Raid SL UA — це український простір для гравців RAID Shadow Legends, де формується власний зимовий ринок, спільнота та взаємодія.
+        Ринок Raid SL UA — це український простір для гравців RAID Shadow Legends, де формується власна спільнота, обмін та ринок пропозицій.
         </p>
     </div>
 
     <div class="card">
-        <h2>Що тут відбувається</h2>
+        <h2>Що тут є</h2>
         <ul>
             <li>Оголошення від гравців</li>
-            <li>Обміни та пропозиції</li>
-            <li>Жива українська спільнота</li>
+            <li>Обмін та пропозиції</li>
+            <li>Українська ігрова спільнота</li>
             <li>Обговорення RAID Shadow Legends</li>
-            <li>Рейдовий Telegram-ринок</li>
+            <li>Telegram-ринок</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>Приєднуйся до рейду</h2>
+        <h2>Приєднуйся</h2>
         <p>
-        Стань частиною українського фентезі-світу RAID.  
-        Зима тільки починається…
+        Увійди у світ зимового фентезі RAID разом з українською спільнотою.
         </p>
         <a class="button" href="https://t.me/bazar_raid_ua" target="_blank">Приєднатися</a>
     </div>
